@@ -1,0 +1,182 @@
+/*corpo*/
+body{
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*Cabeçalhos e menu's*/
+.container {
+    margin: 0 auto;/*centraliza os elementos*/
+    width: 940px;/*define que os objetos daquela classe terão um tamanho limitado a 940px*/
+}
+
+header {
+    position: relative;/*define que a posição é relativa e suas coordenadas serão respeitadas*/
+}
+
+.sacola {
+    background-image: url(../img/sacola.png);/*imagem a ser usada na classe*/
+    background-repeat: no-repeat;/*para não repetir a imagem várias vezes dento dessa classe*/
+    background-position: top right;
+    font-size: 14px;/*tamanho da fonte*/
+    padding-right: 35px;/*espaçamento interno da classe*/
+    text-align: right; /*alinha o texto à direita*/
+    width: 140px;/*define uma largura*/
+    padding-top: 8px;/*define uma margem interna à classe, margem a cima, distância do topo*/
+    position: absolute;/*define que a posição é absoluta e suas coordenadas serão respeitadas de acordo com o espaçamento total do nó pai*/
+    top: 0;/*coordenadas de distancia em relação ao teto*/
+    right: 0;/*coordenadas de distancia em relação a direita*/
+}
+
+.menu-opcoes {
+    position: absolute;/*define que a posição é absoluta e suas coordenadas serão respeitadas de acordo com o espaçamento total do nó pai*/
+    bottom: 0;/*coordenadas de distancia em relação ao chão*/
+    right: 0;/*coordenadas de distancia em relação a direita*/
+}
+
+.menu-opcoes ul {
+    font-size: 15px;/*define o tamanho da fonte dos elementos do menu não-ordenado*/
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes a {
+    color: #003366;/*define uma cor para a tag de link da lista não-ordenada*/
+}
+
+/*Segunda parte da página após o menu do topo*/
+.busca,
+.menu-departamentos {
+    background-color: #DCDCDC;/*cor de fundo*/
+    font-weight: bold;/*define a grossura da letra*/
+    text-transform: uppercase;/*define a transformação do texto, que nesse caso está em letra maiúsculas*/
+    margin-right: 10px;/*define uma margem externa à direita*/
+    width: 230px;/*define a lagura da classe*/
+    float: left;
+}
+
+.busca button {
+    background-image: url(../img/busca.png);/*define a imagem que irá ficar no fundo da classe busca*/
+    background-repeat: no-repeat;/*define que a imagem não irá se repetir*/
+    border: none;/*define que a tag não irá ter bordas*/
+    width: 20px;/*define que a tag irá ter uma largura igual a 20px*/
+    height: 20px;/*define que a tag irá ter uma altura igual a 20px*/
+    text-indent: -9999px;/*gambiarra kskksk*/
+}
+
+.menu-departamentos {
+    clear: left;/*não permite que o objeto que tem a propriedade flloat: left na classe flutue à esquerda do que não tem*/
+    margin-top: 10px;/*define uma margem externa de 10px do topo*/
+    padding-bottom: 10px;/*define um espaçamento interno de 10 px em relação ao chão*/
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;/*define uma margem externa de 10px pra todos os lados*/
+}
+
+.menu-departamentos li {
+    background-color: white;/*define a cor de fundo da tag*/
+    margin-bottom: 1px;/*define uma margem externa em relação ao chão da tag*/
+    padding: 5px 10px;/*define um espaçamento interno pra tag*/
+}
+
+.menu-departamentos a {
+    color: #333333;/*cor da tag na classe*/
+    text-decoration: none;/*tira as decorações presentes nessa tag*/
+}
+
+.busca input[type=search] {
+    width: 170px;/*define uma largura para a caixa de busca*/
+}
+
+/*Terceira parte da página, após os destaques...*/
+.painel {
+    margin: 10px 0;/*define uma margem de 10 pixels em cima e embaixo e 0pixels na direita e na esquerda*/
+    padding: 10px;/*define uma margem interna de 10px para todos os lados*/
+    width: 445px;/*define uma largura de 445px, obs.:A altura ficará proporcional a largura colocada aq*/
+    float: left;/*faz o objeto flutuar a esquerda*/
+}
+
+.painel li {
+    display: inline-block;/*define que a tag li dessa classe irá ter um estilo blocos em linha*/
+    vertical-align: top;/*alinha o elemento verticalmente ao topo*/
+    width: 140px;/*define uma largura de 140px a tag li*/
+    margin: 2px;/*define uma margem externa de 2px para todos os lados*/
+    padding-bottom: 10px;/*define uma margem interna em relação ao chão, de 10px*/
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;/*define o tamanho da fonte da tag a para 14px*/
+    text-align: center;/*define que o texto da tag a vai estar centralizado*/
+    text-decoration: none;/*define que o texto não vai ter nenhum tipo de formatação especial*/
+}
+
+.painel h2 {
+    font-size: 24px;/*define o tamanho da fonte para 24px*/
+    font-weight: bold;/*define que a fonte vai estar em negrito*/
+    text-transform: uppercase;/*define que toda a tag h2 desta classe irá ser letra maiúscula*/
+    margin-bottom: 10px;/*define uma margem interna em relação ao chão, de 10px*/
+}
+
+.novidades {
+    float: left;/*define que os elementos dessa classe irão flutuar à esquerda*/
+    background-color: #F5DCDC;
+}
+
+.mais-vendidos {
+    float: right;/*define que os elementos dessa classe irão flutuar à direita*/
+    background-color: #dcdcf5;
+}
+
+/*Rodapé*/
+footer {
+    background-image: url(../img/fundo-rodape.png);/*define uma imagem no fundo do rodapé*/
+    clear: both;/*limpa toda formatação antes daquela classe e faz o objeto vir após os formatados flutuantes*/
+    padding: 20px 0;/*define uma margem interna de 20px em cima e embaixo, e uma de 0 na horizontal*/
+}
+
+footer .container {
+    position: relative;/*define que sua posição vai ser relativa, não obedece as coordenadas*/
+}
+
+.container img[alt="Logo da Mirror Fashion"] {
+    padding: 10px 0;/*define que irá ter uma margem interna igual a 10px na vertical e 0 na horizontal*/
+}
+
+.social {
+    position: absolute;/*define que sua posição vai ser absoluta, obedece as coordenadas e a sua hierarquia*/
+    top: 12px;/*coordenada de distancia em relação ao topo*/
+    right: 0;/*coordenada de distancia em relação a direita*/
+}
+
+.social li {
+    float: left;/*define que a tag li irá flutuar a esquerda da classe social*/
+    margin-left: 25px;/*define uma margem externa a esqueda de 25 px*/
+    padding: 10px 0;/*define que irá ter uma margem interna igual a 10px na vertical e 0 na horizontal*/
+}
+
+
+.social a{
+    height: 32px;/*define que a altura para a tag a será de 32px*/
+    width: 32px;/*define que a largura para a tag a será de 32px*/
+    display: block;/*define que os links irão ocupar o espaço de uma linha inteira por si só*/
+    text-indent: -9999px;/*gambiarra kkkkk*/
+}
+
+.social a[href*="facebook.com"] {/*esse seletor de css define a busca pelo valor naquele atributo em qualquer posição*/
+    background-image: url(../img/facebook.png);/*define uma imagem no fundo do texto escrito*/
+}
+
+.social a[href*="twitter.com"] {/*esse seletor de css define a busca pelo valor naquele atributo em qualquer posição*/
+    background-image: url(../img/twitter.png);/*define uma imagem no fundo do texto escrito*/
+}
+
+.social a[href*="plus.google.com"] {/*esse seletor de css define a busca pelo valor naquele atributo em qualquer posição*/
+    background-image: url(../img/googleplus.png);/*define uma imagem no fundo do texto escrito*/
+}

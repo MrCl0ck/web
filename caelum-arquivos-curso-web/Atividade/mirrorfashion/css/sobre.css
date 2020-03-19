@@ -1,0 +1,106 @@
+body{
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+/*corpo*/
+body{
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+header {
+    position: relative;/*define que a posição é relativa e suas coordenadas serão respeitadas*/
+}
+
+.sacola {
+    background-image: url(../img/sacola.png);/*imagem a ser usada na classe*/
+    background-repeat: no-repeat;/*para não repetir a imagem várias vezes dento dessa classe*/
+    background-position: top right;
+    font-size: 14px;/*tamanho da fonte*/
+    padding-right: 35px;/*espaçamento interno da classe*/
+    text-align: right; /*alinha o texto à direita*/
+    width: 140px;/*define uma largura*/
+    padding-top: 8px;/*define uma margem interna à classe, margem a cima, distância do topo*/
+    position: absolute;/*define que a posição é absoluta e suas coordenadas serão respeitadas de acordo com o espaçamento total do nó pai*/
+    top: 0;/*coordenadas de distancia em relação ao teto*/
+    right: 0;/*coordenadas de distancia em relação a direita*/
+}
+
+.menu-opcoes {
+    position: absolute;/*define que a posição é absoluta e suas coordenadas serão respeitadas de acordo com o espaçamento total do nó pai*/
+    bottom: 0;/*coordenadas de distancia em relação ao chão*/
+    right: 0;/*coordenadas de distancia em relação a direita*/
+}
+
+.menu-opcoes ul {
+    font-size: 15px;/*define o tamanho da fonte dos elementos do menu não-ordenado*/
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes a {
+    color: #003366;/*define uma cor para a tag de link da lista não-ordenada*/
+}
+
+h1 { 
+    background-image: url(img/sobre-background.jpg);
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    border-bottom: 2px solid #333333; 
+}
+
+p {
+    padding: 0 45px;
+    text-indent: 15px;
+}
+ 
+figure{
+    background-color: #F2EDED;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+#rodape {
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+#familia-pelho {
+    float: left;
+    margin: 10px ;
+}
